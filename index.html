@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="John F. Dunham">
+	<title> Scapeghost </title>
+	
+	<!-- EXTERNAL LIBRARIES -->
+	<!-- Including JQuery as it saves me some time. -->
+	<script type="text/javascript" src="js/libs/jquery-2.1.1.min.js"></script>
+	
+	<!-- Displays the FPS and latency, REMOVE IN PRODUCTION -->
+	<script type="text/javascript" src="js/libs/Stats.js"></script>
+	
+	<!-- Displays the tweakable elements, REMOVE IN PRODUCTION -->
+	<script type="text/javascript" src="js/libs/dat.gui.min.js"></script>
+    
+
+	<!-- Scapeghost -->
+	<!-- Manages the tweakable GUI, REMOVE WITH DAT.GUI --> 
+	<script type="text/javascript" src="js/DebugGUI.js"></script>
+	
+	<!-- Utility functions, e.g. LERP -->
+	<script type="text/javascript" src="js/Utility.js"></script>
+
+	<!-- Contains some hardcoded configurations for the game -->
+	<script type="text/javascript" src="js/Configuration.js"></script>
+	
+	<script type="text/javascript" src="js/ViewPort.js"></script>
+	<script type="text/javascript" src="js/Controls.js"></script>
+	
+	<!--  Manages the physics representations of the objects and talks directly to Chipmunk -->
+	<script type="text/javascript" src="js/PhysicsManager.js"></script>
+
+	<!-- Creates and manages the spritesheet for a level -->
+	<script type="text/javascript" src="js/Spritesheet.js"></script>
+
+	<!-- Objects that may be spawned on a level -->
+	<script type="text/javascript" src="js/Actor.js"></script>
+	<script type="text/javascript" src="js/PlayerMovementStates.js"></script>
+	<script type="text/javascript" src="js/Player.js"></script>
+	
+	<!-- Defines how specific object types are spawned -->
+	<script type="text/javascript" src="js/ObjectTypes.js"></script>
+
+	
+	<!-- Manages the level transitions and rendering -->
+	<script type="text/javascript" src="js/LevelManager.js"></script>
+	
+	<!-- Contains the Game Loop -->
+	<script type="text/javascript" src="js/Scapeghost.js"></script>
+	<!-- END Scapeghost -->
+	
+ <script></script>
+</head>
+
+<body onload='app.Scapeghost.LoadGame();' style="background:white;">
+	<div id="game" tabindex="0">
+		<canvas id="test" style="outline: 2px dotted blue;"></canvas>
+		<canvas id="physics" style="outline: 2px dotted blue;"></canvas>
+
+	</div>
+</body>
+
+
+</html>

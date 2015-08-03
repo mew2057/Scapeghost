@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttypes>
+ <objecttype name="TopCollide" color="#9ea400"/>
+ <objecttype name="AllCollide" color="#01a420"/>
+ <objecttype name="LadderCollide" color="#a40091"/>
+ <objecttype name="KillCollide" color="#a41100"/>
+ <objecttype name="Gear" color="#009aa4"/>
+ <objecttype name="Spring" color="#00a425"/>
+ <objecttype name="Player" color="#a42828"/>
+ <objecttype name="Goal" color="#12a400"/>
+ <objecttype name="iDrone" color="#a46700"/>
+ <objecttype name="GUTS" color="#005500"/>
+ <objecttype name="NPC" color="#00aa00"/>
+ <objecttype name="Motorcycle" color="#00aa00"/>
+ <objecttype name="PowerLine" color="#ffff00"/>
+ <objecttype name="BarbedWire" color="#aa0000"/>
+</objecttypes>

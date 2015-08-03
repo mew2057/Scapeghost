@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "iDrone0.png",
+	"frame": {"x":2,"y":2,"w":30,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":30,"h":28},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "iDrone1.png",
+	"frame": {"x":34,"y":2,"w":30,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":30,"h":28},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "iDrone2.png",
+	"frame": {"x":66,"y":2,"w":26,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":26,"h":28},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "iDrone3.png",
+	"frame": {"x":94,"y":2,"w":30,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":30,"h":28},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "iDrone4.png",
+	"frame": {"x":2,"y":32,"w":30,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":30,"h":28},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "iDrone5.png",
+	"frame": {"x":34,"y":32,"w":26,"h":30},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":1,"w":26,"h":30},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "iDrone6.png",
+	"frame": {"x":62,"y":32,"w":26,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":26,"h":28},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "iDrone7.png",
+	"frame": {"x":90,"y":32,"w":26,"h":30},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":26,"h":30},
+	"sourceSize": {"w":32,"h":32}
+}],
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "iDrone.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":64},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9fab0fc0886d28b9c1858ed0a14ce48c$"
+}
+}

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="generics" tilewidth="32" tileheight="32">
+  <image source="generics.png" width="128" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="AllCollide" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="DeadZone" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="LadderCollide" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="RenderBounds" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="TopCollide" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="33" name="cityterrain" tilewidth="32" tileheight="32">
+  <image source="cityterrain.png" width="256" height="256"/>
+ </tileset>
+ <layer name="background" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMBKHb3r/j2ugACaumqqqqqk8fBGwg0Q==
+  </data>
+ </layer>
+ <layer name="terrain" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlT0OgzAMhX0VWhYQC0pOwNZ26/0P0wyJZBkncZrfIZaehCwgL/4eBGBWTj2R1s5euHogHba3wDiedytlpG3vRH3tea5FLcgHnt8G95n2Ko7vSP44vj38+TLP8aX5a/GN45ngkvB1/nf4b554Nj65mSjyrIRvrj/3PsyKXvvmJ/l+FZL0f0PzpCKS8r3gnj/unpjoHmPzo3wvMr8Uvi+jt9GH7BX3uT3W4svl7wt8uX4oIzl8Y+92M071l8rXleT85fYQ8zf5lvVXkm+J/NXkWyJ/I/ANnasrtOPr87eRdfC6B9TjK81fzF8tvtL8nYH1NEy+uf56n7+9+ErzN/kC/ADtdnra
+  </data>
+ </layer>
+ <layer name="genericTerrain" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1DsOgCAQRdFZAEQT9r9XqmkmUXQ++EzebSigOBBAhLH9HV8DFp0P1oxyxX1tMU/fdV38vmp3M+Pb0H1V6b6rfd7zRfUNM6L6NLT7l+3Lfr/0xUK/fzZU367/xRt9OdEXi75Y9MX6k28C1zwEKQ==
+  </data>
+ </layer>
+ <objectgroup name="spawns">
+  <object name="player" type="Player" x="32" y="32" width="32" height="32">
+   <properties>
+    <property name="isArmed" value="0"/>
+    <property name="player" value="Joe"/>
+   </properties>
+  </object>
+  <object name="iDrone" type="iDrone" x="320" y="564" width="32" height="32">
+   <properties>
+    <property name="Vertical" value="1"/>
+   </properties>
+  </object>
+  <object name="gear" type="Gear" x="416" y="224" width="32" height="32"/>
+  <object name="spring" type="Spring" x="256" y="64" width="32" height="32"/>
+  <object name="spring" type="Spring" x="192" y="256" width="32" height="32"/>
+  <object name="spring" type="Spring" x="128" y="512" width="32" height="32"/>
+  <object name="goal" type="Goal" x="1216" y="192" width="32" height="32"/>
+  <object name="gear" type="Gear" x="1120" y="192" width="32" height="32"/>
+  <object name="spring" type="Spring" x="416" y="448" width="32" height="32"/>
+  <object name="gear" type="Gear" x="96" y="32" width="32" height="32"/>
+  <object name="gear" type="Gear" x="1056" y="544" width="32" height="32"/>
+  <object name="spring" type="Spring" x="1120" y="576" width="32" height="32"/>
+  <object name="spring" type="Spring" x="1120" y="480" width="32" height="32"/>
+  <object name="gear" type="Gear" x="1120" y="384" width="32" height="32"/>
+  <object name="spring" type="Spring" x="1056" y="352" width="32" height="32"/>
+  <object name="iDrone" type="iDrone" x="480" y="512">
+   <properties>
+    <property name="Vertical" value="1"/>
+   </properties>
+  </object>
+  <object name="iDrone" type="iDrone" x="352" y="224">
+   <properties>
+    <property name="Vertical" value="0"/>
+   </properties>
+  </object>
+  <object name="iDrone" type="iDrone" x="96" y="416">
+   <properties>
+    <property name="Vertical" value="1"/>
+   </properties>
+  </object>
+  <object name="spring" type="Spring" x="544" y="640" width="32" height="32"/>
+  <object name="spring" type="Spring" x="960" y="608" width="32" height="32"/>
+  <object name="gear" type="Gear" x="672" y="320" width="32" height="32"/>
+  <object name="spring" type="Spring" x="896" y="704" width="32" height="32"/>
+  <object name="spring" type="Spring" x="736" y="800" width="32" height="32"/>
+  <object name="spring" type="Spring" x="512" y="736" width="32" height="32"/>
+  <object name="spring" type="Spring" x="928" y="256" width="32" height="32"/>
+  <object name="spring" type="Spring" x="768" y="416" width="32" height="32"/>
+  <object name="spring" type="Spring" x="864" y="512" width="32" height="32"/>
+  <object name="spring" type="Spring" x="224" y="640" width="32" height="32"/>
+  <object name="spring" type="Spring" x="1120" y="768" width="32" height="32"/>
+  <object name="iDrone" type="iDrone" x="608" y="640">
+   <properties>
+    <property name="Vertical" value="0"/>
+   </properties>
+  </object>
+  <object name="iDrone" type="iDrone" x="928" y="512">
+   <properties>
+    <property name="Vertical" value="0"/>
+   </properties>
+  </object>
+  <object name="iDrone" type="iDrone" x="992" y="800">
+   <properties>
+    <property name="Vertical" value="0"/>
+   </properties>
+  </object>
+  <object name="iDrone" type="iDrone" x="896" y="256">
+   <properties>
+    <property name="Vertical" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="collisions">
+  <object type="KillCollide" x="0" y="896" width="1184" height="64"/>
+  <object type="TopCollide" x="0" y="64" width="128" height="32"/>
+  <object type="TopCollide" x="160" y="96" width="128" height="32"/>
+  <object type="TopCollide" x="288" y="256" width="128" height="32"/>
+  <object type="TopCollide" x="416" y="256" width="32" height="1"/>
+  <object type="TopCollide" x="416" y="320" width="32" height="32"/>
+  <object type="TopCollide" x="352" y="352" width="32" height="32"/>
+  <object type="TopCollide" x="288" y="352" width="32" height="32"/>
+  <object type="TopCollide" x="192" y="288" width="64" height="32"/>
+  <object type="TopCollide" x="192" y="160" width="64" height="1"/>
+  <object type="TopCollide" x="192" y="416" width="64" height="32"/>
+  <object type="TopCollide" x="192" y="544" width="64" height="32"/>
+  <object type="TopCollide" x="128" y="544" width="32" height="32"/>
+  <object type="TopCollide" x="288" y="608" width="32" height="32"/>
+  <object type="TopCollide" x="352" y="608" width="32" height="32"/>
+  <object type="TopCollide" x="416" y="576" width="32" height="32"/>
+  <object type="TopCollide" x="416" y="480" width="32" height="1"/>
+  <object type="TopCollide" x="192" y="672" width="64" height="32"/>
+  <object type="TopCollide" x="352" y="480" width="32" height="32"/>
+  <object type="TopCollide" x="288" y="480" width="32" height="32"/>
+  <object type="TopCollide" x="288" y="448" width="32" height="32"/>
+  <object type="LadderCollide" x="238" y="160" width="4" height="128">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+  <object type="LadderCollide" x="430" y="256" width="4" height="64">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+  <object type="LadderCollide" x="430" y="480" width="4" height="96">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+  <object type="AllCollide" x="1248" y="128" width="32" height="832"/>
+  <object type="AllCollide" x="1184" y="224" width="32" height="736"/>
+  <object type="TopCollide" x="1088" y="224" width="96" height="32"/>
+  <object type="LadderCollide" x="1070" y="384" width="4" height="192">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+  <object type="LadderCollide" x="1134" y="320" width="4" height="96">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+  <object type="TopCollide" x="1120" y="320" width="32" height="1"/>
+  <object type="TopCollide" x="1120" y="416" width="32" height="32"/>
+  <object type="TopCollide" x="1056" y="384" width="32" height="1"/>
+  <object type="TopCollide" x="1056" y="576" width="32" height="32"/>
+  <object type="TopCollide" x="1120" y="608" width="32" height="1"/>
+  <object type="TopCollide" x="1120" y="512" width="32" height="32"/>
+  <object type="TopCollide" x="448" y="672" width="288" height="32"/>
+  <object type="TopCollide" x="800" y="288" width="288" height="32"/>
+  <object type="TopCollide" x="672" y="352" width="160" height="1"/>
+  <object type="LadderCollide" x="1134" y="608" width="4" height="96">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+  <object type="TopCollide" x="416" y="640" width="32" height="32"/>
+  <object type="TopCollide" x="448" y="736" width="32" height="32"/>
+  <object type="TopCollide" x="416" y="704" width="32" height="32"/>
+  <object type="TopCollide" x="448" y="800" width="32" height="32"/>
+  <object type="TopCollide" x="416" y="832" width="32" height="32"/>
+  <object type="TopCollide" x="448" y="864" width="32" height="32"/>
+  <object type="TopCollide" x="416" y="768" width="32" height="32"/>
+  <object type="TopCollide" x="512" y="768" width="64" height="32"/>
+  <object type="TopCollide" x="512" y="864" width="64" height="32"/>
+  <object type="TopCollide" x="640" y="864" width="64" height="32"/>
+  <object type="TopCollide" x="640" y="768" width="64" height="32"/>
+  <object type="TopCollide" x="736" y="832" width="64" height="32"/>
+  <object type="TopCollide" x="736" y="736" width="64" height="32"/>
+  <object type="TopCollide" x="864" y="832" width="64" height="32"/>
+  <object type="TopCollide" x="864" y="736" width="64" height="32"/>
+  <object type="TopCollide" x="960" y="832" width="64" height="32"/>
+  <object type="TopCollide" x="960" y="736" width="64" height="32"/>
+  <object type="TopCollide" x="864" y="640" width="64" height="32"/>
+  <object type="TopCollide" x="736" y="640" width="64" height="32"/>
+  <object type="TopCollide" x="960" y="640" width="64" height="32"/>
+  <object type="TopCollide" x="1056" y="736" width="32" height="32"/>
+  <object type="TopCollide" x="1120" y="704" width="32" height="32"/>
+  <object type="TopCollide" x="864" y="544" width="64" height="32"/>
+  <object type="TopCollide" x="736" y="544" width="64" height="32"/>
+  <object type="TopCollide" x="960" y="448" width="64" height="32"/>
+  <object type="TopCollide" x="960" y="544" width="64" height="32"/>
+  <object type="TopCollide" x="736" y="448" width="64" height="32"/>
+  <object type="TopCollide" x="864" y="448" width="64" height="32"/>
+  <object type="TopCollide" x="1056" y="832" width="32" height="32"/>
+  <object type="TopCollide" x="1120" y="800" width="32" height="32"/>
+  <object type="TopCollide" x="352" y="736" width="32" height="32"/>
+  <object type="TopCollide" x="352" y="864" width="32" height="32"/>
+  <object type="TopCollide" x="288" y="736" width="32" height="32"/>
+  <object type="TopCollide" x="192" y="800" width="64" height="32"/>
+  <object type="TopCollide" x="288" y="864" width="32" height="32"/>
+  <object type="TopCollide" x="672" y="448" width="32" height="32"/>
+  <object type="TopCollide" x="672" y="512" width="32" height="32"/>
+  <object type="LadderCollide" x="686" y="352" width="4" height="96">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="foregroundGenerics" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlmsKgCAQhD1Bj/tfNoSEZSGdXWfVwA8i+mPrPKyUNpuNleO9NnzO2QM0uGcPkOr5+7t+3vm9fTzUvcVlXH91P6z7ycj8Wfc32l+dt9b7ix66Y/KZef7r/EX1A4GxtidPGUTPL28k6B5Qf9l6s78fXr0LOn9R+WL1JeuHzBjZ31b+ej2JBNXPCuv7i+qH+sv+T5f61WaIZEb+Vu1v71y1/M3yt0ZUf5mMOv8eL5sGTg==
+  </data>
+ </layer>
+ <layer name="foreground" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20ND6AAAAAA4NcAEsAAAQ==
+  </data>
+ </layer>
+</map>

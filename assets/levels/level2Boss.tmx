@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="13" height="11" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="generics" tilewidth="32" tileheight="32">
+  <image source="generics.png" width="128" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="AllCollide" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="DeadZone" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="LadderCollide" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="RenderBounds" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="TopCollide" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="33" name="cityterrain" tilewidth="32" tileheight="32">
+  <image source="cityterrain.png" width="256" height="256"/>
+ </tileset>
+ <layer name="background" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjZ2BgYB/Fo5gMDABomAPq
+  </data>
+ </layer>
+ <layer name="terrain" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAAJSDWgmJ8bAYK9IDYxkRiGNAkwx5y9BgOYrfB9BCDYcASiK2JxPFkYACnqxbj
+  </data>
+ </layer>
+ <layer name="genericTerrain" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJzjYYAAHgbiAQ8aTQs9fCSaTw09fFBMCz0MVNIjjCSHi40eBsToIQcAAML3Abc=
+  </data>
+ </layer>
+ <objectgroup name="spawns">
+  <object name="GUTS" type="GUTS" x="224" y="96" width="64" height="64"/>
+  <object name="player" type="Player" x="32" y="0" width="32" height="32">
+   <properties>
+    <property name="isArmed" value="0"/>
+    <property name="player" value="Joe"/>
+   </properties>
+  </object>
+  <object name="Goal" type="Goal" x="128" y="32" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="collisions">
+  <object type="TopCollide" x="64" y="160" width="128" height="32"/>
+  <object type="TopCollide" x="64" y="192" width="64" height="32"/>
+  <object type="TopCollide" x="64" y="224" width="64" height="32"/>
+  <object type="TopCollide" x="64" y="256" width="128" height="1"/>
+  <object type="TopCollide" x="224" y="256" width="64" height="1"/>
+  <object type="TopCollide" x="320" y="256" width="64" height="1"/>
+  <object type="TopCollide" x="320" y="160" width="96" height="32"/>
+  <object type="TopCollide" x="384" y="128" width="32" height="32"/>
+  <object type="TopCollide" x="384" y="96" width="32" height="32"/>
+  <object type="TopCollide" x="320" y="64" width="96" height="32"/>
+  <object type="TopCollide" x="224" y="64" width="64" height="32"/>
+  <object type="TopCollide" x="128" y="64" width="64" height="32"/>
+  <object type="TopCollide" x="224" y="160" width="64" height="32"/>
+  <object type="AllCollide" x="0" y="320" width="416" height="32"/>
+  <object type="AllCollide" x="0" y="0" width="32" height="320"/>
+  <object type="AllCollide" x="64" y="0" width="32" height="96"/>
+  <object type="LadderCollide" x="142" y="256" width="4" height="64">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+  <object type="LadderCollide" x="238" y="256" width="4" height="64">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+  <object type="LadderCollide" x="334" y="256" width="4" height="64">
+   <properties>
+    <property name="sensor" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="foregroundGenerics" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYwAfF+NgDBUbdRhwAABfjAP0=
+  </data>
+ </layer>
+ <layer name="foreground" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4A8AAACPAAB
+  </data>
+ </layer>
+</map>
